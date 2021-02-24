@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tutor;
+
 use Illuminate\Http\Request;
 
 class TutorController extends Controller
@@ -48,9 +50,7 @@ class TutorController extends Controller
             'email' => 'required|email'
         ]);
         
-        //Tutor::create(request()->all());
-        
-        //return redirect()->route('tutores.index');
+        Tutor::create(request()->all());
     }
 
     /**

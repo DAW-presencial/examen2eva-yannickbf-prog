@@ -15,7 +15,7 @@
         </div>
         <br /> 
     @endif
-    <form method="POST" class="ml-2" action="">
+    <form method="POST" class="ml-2" action="{{ route('tutores.store') }}">
         @csrf
         <label>
             @lang('Company')<br>
