@@ -9,37 +9,37 @@
         @csrf
         <label>
             @lang('Company')<br>
-            <input type="text" name="empresa" value="{{ old('empresa') }}">
+            <input type="text" name="empresa" value="{{ old('empresa') }}" required>
         </label>
         <br>
         <label>
             {{ __("Document type") }}<br>
-            <input type="text" name="tipus_document" value="{{ old('tipus_document') }}">
+            <input type="text" name="tipus_document" value="{{ old('tipus_document') }}" required>
         </label>
         <br>
         <label>
             @lang('Identity document')<br>
-            <input type="text" name="document_identitat" value="{{ old('document_identitat') }}">
+            <input type="text" name="document_identitat" value="{{ old('document_identitat') }}" required>
         </label>
         <br>
         <label>
             {{ __("Name") }}<br>
-            <input type="text" name="nom" value="{{ old('nom') }}">
+            <input type="text" name="nom" value="{{ old('nom') }}" required>
         </label>
         <br>
         <label>
             @lang('First surname')<br>
-            <input type="text" name="primer_llinatge" value="{{ old('primer_llinatge') }}">
+            <input type="text" name="primer_llinatge" value="{{ old('primer_llinatge') }}" required>
         </label>
         <br>
         <label>
             {{ __("Second surname") }}<br>
-            <input type="text" name="segon_llinatge" value="{{ old('segon_llinatge') }}">
+            <input type="text" name="segon_llinatge" value="{{ old('segon_llinatge') }}" required>
         </label>
         <br>
         <label>
             @lang('Identity document country')<br>
-            <input type="text" name="pais_document_identitat" value="{{ old('pais_document_identitat') }}">
+            <input type="text" name="pais_document_identitat" value="{{ old('pais_document_identitat') }}" required>
         </label>
         <br>
         <label>
@@ -62,12 +62,12 @@
         <br>
         <label>
             @lang('Phone')<br>
-            <input type="text" name="telefon" value="{{ old('telefon') }}">
+            <input type="text" name="telefon" value="{{ old('telefon') }}" required>
         </label>
         <br>
         <label>
             {{ __("Email") }}<br>
-            <input type="text" name="email" value="{{ old('email') }}">
+            <input type="text" name="email" value="{{ old('email') }}" required>
         </label>
         <br>
         <button class="btn btn-primary">Guardar</button>
