@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::view("/tutores", "tutores.index")->name('tutores.index');
+Route::view("/tutores/crear", "tutores.create")->name('tutores.create');

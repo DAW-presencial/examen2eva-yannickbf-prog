@@ -17,14 +17,14 @@ class CreateTutorsTable extends Migration
             $table->id();
             $table->string('empresa');
             $table->string('tipus_document');
-            $table->string('document_identitat');
+            $table->string('document_identitat')->unique();
             $table->string('nom');
             $table->string('primer_llinatge');
             $table->string('segon_llinatge');
             $table->string('pais_document_identitat');
-            $table->string('provincia');
-            $table->string('municipi');
-            $table->string('estat');
+            $table->string('provincia')->nullable();
+            $table->string('municipi')->nullable();
+            $table->string('estat')->nullable();
             $table->bigInteger('telefon');
             $table->string('email');
             $table->timestamps();
