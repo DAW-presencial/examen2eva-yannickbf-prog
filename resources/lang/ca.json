@@ -1,0 +1,14 @@
+{
+    "Company": "Empresa",
+    "Document type": "Tipus document",
+    "Identity document": "Document identitat",
+    "Name": "Nom",
+    "First surname": "Primer llinatge",
+    "Second surname": "Segon llinatge",
+    "Identity document country": "Pais document identitat",
+    "Province": "Provincia",
+    "City": "Municipi",
+    "State": "Estat",
+    "Phone": "Telefon",
+    "Email": "Email"
+}

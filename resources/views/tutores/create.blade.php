@@ -8,52 +8,52 @@
     <form method="POST" class="ml-2" action="">
         @csrf
         <label>
-            Empresa<br>
+            @lang('Company')<br>
             <input type="text" name="empresa" value="{{ old('empresa') }}">
         </label>
         <br>
         <label>
-            Tipus document<br>
+            {{ __("Document type") }}<br>
             <input type="text" name="tipus_document" value="{{ old('tipus_document') }}">
         </label>
         <br>
         <label>
-            Document identitat<br>
+            @lang('Identity document')<br>
             <input type="text" name="document_identitat" value="{{ old('document_identitat') }}">
         </label>
         <br>
         <label>
-            Nom<br>
+            {{ __("Name") }}<br>
             <input type="text" name="nom" value="{{ old('nom') }}">
         </label>
         <br>
         <label>
-            Primer llinatge<br>
+            @lang('First surname')<br>
             <input type="text" name="primer_llinatge" value="{{ old('primer_llinatge') }}">
         </label>
         <br>
         <label>
-            Segon llinatge<br>
+            {{ __("Second surname") }}<br>
             <input type="text" name="segon_llinatge" value="{{ old('segon_llinatge') }}">
         </label>
         <br>
         <label>
-            Pais document identitat<br>
+            @lang('Identity document country')<br>
             <input type="text" name="pais_document_identitat" value="{{ old('pais_document_identitat') }}">
         </label>
         <br>
         <label>
-            Provincia<br>
+            {{ __("Province") }}<br>
             <input type="text" name="provincia" value="{{ old('provincia') }}">
         </label>
         <br>
         <label>
-            Municipi<br>
+            @lang('City')<br>
             <input type="text" name="municipi" value="{{ old('municipi') }}">
         </label>
         <br>
         <label>
-            Estat<br>
+            {{ __("State") }}<br>
             <select name="estat">
               <option value="en_actiu" {{ old('estat') == 'en_actiu' ? 'selected' : '' }} >Tutor en actiu</option>
               <option value="no_en_actiu" {{ old('estat') == 'no_en_actiu' ? 'selected' : '' }} >Tutor no en actiu</option>
@@ -61,12 +61,12 @@
         </label>
         <br>
         <label>
-            Telefon<br>
+            @lang('Phone')<br>
             <input type="text" name="telefon" value="{{ old('telefon') }}">
         </label>
         <br>
         <label>
-            Email<br>
+            {{ __("Email") }}<br>
             <input type="text" name="email" value="{{ old('email') }}">
         </label>
         <br>
