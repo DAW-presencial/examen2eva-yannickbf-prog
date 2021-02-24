@@ -17,5 +17,8 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::view("/tutores", "tutores.index")->name('tutores.index');
-Route::view("/tutores/crear", "tutores.create")->name('tutores.create');
+//Route::view("/tutores", "tutores.index")->name('tutores.index');
+//Route::view("/tutores/crear", "tutores.create")->name('tutores.create');
+Route::get("/tutores/crear", "TutorController@create")->name('tutores.create');
+//Route::post("/tutores", "TutorController@store")->name('tutores.store');
+//Route::post("/tutores", "TutorController@store")->name('tutores.store');
